@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <title>Landing panel</title>
+    <link href="img/favicon_mediametrie.png" rel="icon">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+<!--- ACCUEIL -->
+<div class="container-fluid" id="accueil">
+    <div class="row">
+        <div class="col-6"><img id="accueil_photo" src="assets/background.png"></div>
+        <div class="col-6">
+            <div id="accueil_titre"><p>Parrainez vos proches et devenez un ambassadeur de Médiamétrie ! </p></div>
+            <form id="formulaire">
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label" for="nom">Nom*</label>
+                        <input class="form-control" id="nom" name="nom" placeholder="Nom" required type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label" for="prenom">Prénom*</label>
+                        <input class="form-control" id="prenom" name="prenom" placeholder="Prénom" required type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label" for="email">E-mail*</label>
+                        <input class="form-control" id="email" inputmode="email" name="email" placeholder="E-mail"
+                               required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label" for="tel">Téléphone mobile du filleul*</label>
+                        <input class="form-control" id="tel" name="tel" placeholder="Téléphone mobile du filleul"
+                                  type="tel">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="checkbox" id="check">
+                        <label id="label_check" class="form-label" for="check"> Je m’engage*</label>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span class="obligatoire">*champ obligatoire</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div  class="col">
+                        <button class="btn btn-primary" id="bouton" type="submit">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+</div>
+
+<!--- FOOTER -->
+<div id="footer_desktop">
+    <div id="lien_email">
+        <p>Des questions ? <br> Contactez-nous</p>
+        <a href="mailto:panelaip@mediametrie.fr">panelaip@mediametrie.fr</a>
+    </div>
+    <img id="image_footer_desktop" src="assets/footer.svg">
+    <div id="mention_legale_desktop">
+        <a target="_blank"
+           href="https://panel.mediametrie.fr/medias/AIP_-_landing_panel_2022_/mentions_legales_2022.pdf">Mentions
+            légales</a>
+        <a target="_blank"
+           href="https://panel.mediametrie.fr/medias/AIP_-_landing_panel_2022_/conditions_generales_d_utilisation_2022.pdf">Conditions
+            Générales d'Utilisation</a>
+    </div>
+</div>
+
+
+<!-- JS -->
+<script src='https://www.google.com/recaptcha/api.js?hl=fr'></script>
+<script crossorigin="anonymous"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- MDB -->
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+        type="text/javascript"
+></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

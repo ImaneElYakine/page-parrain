@@ -1,0 +1,268 @@
+/* POLICES */
+@font-face {
+    font-family: 'Mediametrie';
+    src: url('/font/Mediametrie.otf') format("opentype"),
+    url('/font/Mediametrie.ttf') format("truetype"),
+    url('/font/Mediametrie.eot') format("embedded-opentype"),
+    url('/font/Mediametrie.svg') format("svg"),
+    url('/font/Mediametrie.woff') format("woff");
+}
+
+* {
+    font-family: 'Mediametrie', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row, .col-6, .container-fluid, .col {
+    padding: 0;
+    margin: 0;
+}
+
+/* ACCUEIL */
+#accueil {
+    color: black;
+}
+
+#accueil_photo {
+    width: 50vw;
+    font-size: 0;
+}
+
+
+#accueil_titre {
+    font-weight: bold;
+    font-size: 2.25vmax;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* CONTACT */
+#contact {
+    color: black;
+}
+
+#texte_participation {
+    font-size: 1.5vw;
+    text-align: center;
+    color: #82D200;
+    font-weight: bold;
+    padding-bottom: 5vh;
+}
+
+#titre_contact {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.75vw;
+    padding-top: 10vh;
+}
+
+#texte_contact {
+    text-align: center;
+    font-size: 1.25vw;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-bottom: 5vh;
+}
+
+#formulaire {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    font-size: 1.15vw;
+    color: black;
+}
+
+#formulaire label {
+    font-weight: bold;
+    margin-top: 2vh;
+    color: black;
+}
+
+#label_check {
+    margin-top: 0;
+}
+
+#formulaire input {
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 1vw;
+    height: 5vh;
+}
+
+#check {
+
+}
+
+#formulaire select {
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 1vw;
+}
+
+#formulaire textarea {
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #bfbfbf;
+    font-size: 1vw;
+}
+
+input:active, input:focus, input:active:focus, input.active:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+textarea:active, textarea:focus, textarea:active:focus, textarea.active:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+select:active, select:focus, select:active:focus, select.active:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.obligatoire {
+    font-size: 1vw;
+    float: right;
+    margin-top: 3vh;
+}
+
+#indication_tel {
+    font-size: 1vw;
+}
+.center {
+    text-align: center;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}
+
+
+#bouton {
+    margin-top: 3vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 1.15vw;
+    font-weight: bold;
+    background-color: #9F1A76;
+    border: none;
+    box-shadow: none;
+}
+
+#bouton:hover {
+    color: #9F1A76;
+    background-color: white;
+    border: solid 1px #9F1A76;
+}
+
+*.btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+#form_message_info {
+    background-color: white;
+    border: #82D200 solid 2px;
+    color: #82D200;
+    font-weight: bold;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+    border-radius: 0;
+    display: none;
+}
+
+#form_message_alert {
+    background-color: white;
+    border: #e10037 solid 2px;
+    color: #e10037;
+    font-weight: bold;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+    border-radius: 0;
+    display: none;
+}
+
+
+/* FOOTER */
+
+#footer_desktop {
+    margin-top: auto;
+    position: relative;
+    font-size: 0;
+}
+
+#footer_mobile {
+    display: none;
+}
+
+#image_footer_desktop {
+    width: 100vw;
+    height: auto;
+    margin-top: -15%;
+    font-size: 0;
+}
+
+#lien_email {
+    color: white;
+    font-size: 1.25vw;
+    position: absolute;
+    bottom: 3vh;
+    left: 1vw;
+    text-align: center;
+}
+
+#lien_email a {
+    color: white;
+    text-decoration: underline;
+}
+
+#mention_legale_desktop {
+    background-color: #416900;
+    position: absolute;
+    width: 100vw;
+    font-size: 0.95vw;
+    text-align: center;
+}
+
+#mention_legale_desktop a {
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+#mention_legale_mobile {
+    display: none;
+}
+
+#mention_legale_desktop a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
