@@ -9,37 +9,34 @@
 </head>
 
 <body class="bg-white font-mediametrie h-screen">
-<!-- Cookie Modal -->
-<!-- Main modal -->
-<div id="default-modal" data-modal-show="true" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
-    <div class="relative w-full max-w-2xl px-4 h-full md:h-auto">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content w-4/5 md:w-2/5 md:mt-12">
         <!-- Modal content -->
-        <div class="bg-white shadow relative dark:bg-gray-700">
+        <div class="relative bg-white dark:bg-gray-700">
             <!-- Modal header -->
-            <div class="flex items-start justify-between p-5 border-b dark:border-gray-600">
-                <h3 class="text-gray-900 text-xl lg:text-2xl font-semibold dark:text-white">
+            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                     Terms of Service
                 </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900  text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="default-modal">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
             </div>
             <!-- Modal body -->
             <div class="p-6 space-y-6">
-                <p class="text-gray-500 text-base leading-relaxed dark:text-gray-400">
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                     With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
                 </p>
-                <p class="text-gray-500 text-base leading-relaxed dark:text-gray-400">
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                     The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
                 </p>
             </div>
             <!-- Modal footer -->
-            <div class="flex space-x-2 items-center p-6 border-t border-gray-200  dark:border-gray-600">
-                <button data-modal-toggle="default-modal" type="button" class="text-white bg-fushia hover:bg-dark-fushia focus:ring-4 font-medium text-sm px-5 py-2.5 text-center focus:ring-gray-300">I accept</button>
-                <button data-modal-toggle="default-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300  border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Decline</button>
+            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button onclick="hideModal()" type="button" class="text-white bg-fushia hover:bg-dark-fushia focus:ring-4 font-medium text-sm px-5 py-2.5 text-center focus:ring-gray-300">I accept</button>
+                <button onclick="hideModal()" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300  border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Decline</button>
             </div>
         </div>
     </div>
+
 </div>
 
 <div class="w-full flex flex-wrap">
@@ -51,7 +48,9 @@
     <!-- Login Section -->
     <div class="w-full md:w-1/2 flex flex-col">
         <div class="flex justify-center md:justify-center lg:pt-4 md:pt-2 sm:pt-3">
-            <img alt="" class="lg:w-36 md:w-24 w-32" src="img/logo_mediametrie.png">
+            <a href="https://www.mediametrie.fr/fr" target="_blank"><img alt="" class="lg:w-28 absolute left-1/2 -translate-x-1/2 md:hidden w-32" src="img/logo_mediametrie_blanc.png"></a>
+            <a href="https://www.mediametrie.fr/fr" target="_blank"> <img alt="" class="lg:w-36 md:w-24 w-32" src="img/logo_mediametrie.png"></a>
+            <img alt="" class="object-cover object-top md:hidden" src="img/background-mobile.png">
         </div>
 
         <div class="flex flex-col justify-center lg:pt-9 pt-8 md:pt-0 px-4 md:px-12 lg:px-24">
@@ -111,13 +110,14 @@
             <div class="order-1 md:order-2">
                 <a href="" target="_blank"><span class="px-2">Mentions légales</span></a>
                 <a href="" target="_blank"><span class="px-2 border-l">C.G.U</span></a>
-               <span class="px-2 border-l hover:cursor-pointer" data-modal-toggle="default-modal">Cookies</span>
+                <span class="px-2 border-l hover:cursor-pointer" onclick="displayModal()">Cookies</span>
             </div>
         </div>
     </div>
 </div>
 
 <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
